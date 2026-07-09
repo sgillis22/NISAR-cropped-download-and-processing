@@ -39,6 +39,22 @@ machine urs.earthdata.nasa.gov
 login your_login  
 password your_password  
 
+### **GUNW_Download**
+
+**Not neccessarily functional, under development**
+Tools for searching, filtering, and downloading **NISAR GUNW** granules.  
+Supports:
+
+- Date‑range filtering  
+- Polarization selection  
+- AOI cropping using GDAL  
+- Saving georeferenced TIFFs for downstream analysis
+
+Requires your NASA earthdata search credentials in a .netrc, in the following format:
+
+machine urs.earthdata.nasa.gov  
+login your_login  
+password your_password  
 ### **Data_Display_scripts**
 Scripts for generating visual diagnostics from GSLC data, including:
 
