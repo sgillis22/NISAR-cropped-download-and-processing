@@ -25,7 +25,7 @@ This repository provides a practical workflow for working with NISAR GSLC and GU
 ## Repository Contents
 
 ### **GSLC_Download**
-Tools for searching, filtering, and downloading **NISAR GSLC** granules.  
+Tool for searching, filtering, and downloading **NISAR GSLC** granules.  
 Supports:
 
 - Date‑range filtering  
@@ -42,7 +42,8 @@ password your_password
 ### **GUNW_Download**
 
 **Not neccessarily functional, under development**
-Tools for searching, filtering, and downloading **NISAR GUNW** granules.  
+
+Tool for searching, filtering, and downloading **NISAR GUNW** granules.  
 Supports:
 
 - Date‑range filtering  
