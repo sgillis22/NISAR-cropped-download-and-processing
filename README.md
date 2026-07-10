@@ -17,8 +17,15 @@ This repository provides a practical workflow for working with NISAR GSLC and GU
 - Automated granule discovery and download  
 - Spatial and temporal filtering  
 - Cropping to user‑defined areas of interest  
-- Generating visual products (PNG/TIFF) from radar data  
 - Creating interferograms and amplitude‑based diagnostics  
+
+For any dowload scripts, they will require your NASA earthdata search credentials in a .netrc, in the following format:
+
+machine urs.earthdata.nasa.gov  
+login your_login  
+password your_password 
+
+Given the release cycle of NISAR data, the scripts will download as much data as your account has access to, and as NISAR data release and calibration develops, scripts may require adjustment and further development.
 
 ---
 
@@ -33,12 +40,6 @@ Supports:
 - AOI cropping using GDAL  
 - Saving georeferenced TIFFs for downstream analysis
 
-Requires your NASA earthdata search credentials in a .netrc, in the following format:
-
-machine urs.earthdata.nasa.gov  
-login your_login  
-password your_password  
-
 ### **GUNW_Download**
 
 **Not neccessarily functional, under development**
@@ -49,12 +50,7 @@ Supports:
 - Polarization selection  
 - AOI cropping using GDAL  
 - Saving georeferenced TIFFs for downstream analysis
-
-Requires your NASA earthdata search credentials in a .netrc, in the following format:
-
-machine urs.earthdata.nasa.gov  
-login your_login  
-password your_password  
+  
 ### **Data_Display_scripts**
 Scripts for generating visual diagnostics from GSLC data, including:
 
