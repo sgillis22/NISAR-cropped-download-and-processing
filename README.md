@@ -19,11 +19,7 @@ This repository provides a practical workflow for working with NISAR GSLC and GU
 - Cropping to user‑defined areas of interest  
 - Creating interferograms and amplitude‑based diagnostics  
 
-For any dowload scripts, they will require your NASA earthdata search credentials in a .netrc, in the following format:
-
-machine urs.earthdata.nasa.gov  
-login your_login  
-password your_password 
+For any dowload scripts, they will require your NASA earthdata search credentials in a .netrc, more information about setting up your .netrc can be found [here](#setting-up-a-netrc)
 
 Given the release cycle of NISAR data, the scripts will download as much data as your account has access to, and as NISAR data release and calibration develops, scripts may require adjustment and further development.
 
@@ -60,8 +56,22 @@ Scripts for generating visual diagnostics from GSLC data, including:
 - Wrapped and unwrapped interferograms  
 - Export to PNG and GeoTIFF formats  
 
-
 ---
+
+### Setting up a netrc
+
+To set up your .etrc to store your credentials, complete the following steps:
+
+Open a terminal and navigate to your home directory by tying ```cd```
+
+Create/open your netrc by typing the command ```nano ~/.netrc```
+
+Once in the text editor, add your NASA Earthdata Search credentials in the following format
+```
+machine urs.earthdata.nasa.gov  
+login <your_login>  
+password <your_password> 
+```
 
 **Seamus Gillis**  
 Cornell University  
